@@ -1,0 +1,25 @@
+h5{
+    text-align: center;
+
+}
+*{
+    overflow: hidden;
+    height: min-content;
+   
+}
+div{
+    height: 400px;
+}
+div{
+    background: url(/assets/images.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 400px;
+}
+
+@media screen and (max-width: 800px){
+    *{
+       
+        display: none;
+    }
+}

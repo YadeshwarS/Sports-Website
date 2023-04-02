@@ -1,0 +1,23 @@
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<nav id="navbar" class="sticky">
+    <label class="toggle">
+        <i class="fa fa-bars" (click)="toggle()" id="bar"></i> 
+    </label>
+    <ul id="menu" *ngIf="show"> 
+        <li><a routerLink="home">HOME</a></li>
+        <li><a routerLink="schemes">SCHEMES</a></li>
+        <li><a routerLink="sports">SPORTS</a></li>
+        <li><a routerLink="tb">CERTIFICATE</a></li>
+        <li><a routerLink="reg">REGISTRATION</a></li>
+    </ul>
+    <div class="socialtop">
+        <div class="top-social">
+            <a><i class="fa fa-facebook"></i></a>
+            <a><i class="fa fa-twitter"></i></a>
+            <a><i class="fa fa-instagram"></i></a>
+            <a><i class="fa fa-pinterest"></i></a>
+            <a><i class="fa fa-youtube"></i></a>
+        </div>
+    </div>
+</nav>

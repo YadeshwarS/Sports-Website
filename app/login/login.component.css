@@ -1,0 +1,29 @@
+*{
+    width: 100%;
+}
+h4{
+    text-align: center;
+}
+.container-fluid{
+    background-image: url('/assets/back.jpg');
+    background-size: cover;
+}
+.card-body{
+    width: 100%;
+}
+.col-4{
+    width: 50%;
+    
+}
+#form{
+    top: 0;
+    float: right;
+}
+@media screen and (max-width: 762px){
+    .card-body{
+     width: 400px;
+    }
+    .col-4{
+        width: 400px;
+       }
+ }

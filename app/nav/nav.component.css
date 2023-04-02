@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.toggle{
+    font-size: 30px;
+    color: #fff;
+    float: left;
+    line-height: 45px;
+    margin-left: 10%;
+    cursor: pointer;
+}
+nav{
+    background-color: #000;
+    height: 45px;
+    width: 100%;
+}
+
+.socialtop{
+    float: right;
+    margin-right: 5%;
+    font-size: 15px;
+    display: none;
+}
+ul li{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: inline-block;
+    
+}
+ul li a{
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 50px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px;
+    padding-left: 120px;
+    margin-left: 50px;
+    
+}
+
+ul li a:hover{
+    color: #ff7d00;
+
+}
+.top-social{
+    padding: 14px 15px;
+}
+.top-social a{
+    padding: 13px;
+    color: #fff;
+}
+.top-social a:hover{
+    color: #ff7d00;
+}
+a i{
+    cursor: pointer;
+}
+#bar{
+    display: none;
+}
+
+
+@media screen and (max-width: 1052px)
+{
+   
+    ul{
+        top: -400px;
+        z-index: -1;
+        margin-top: -15px;
+        right: 0;
+        left: 0;
+        width: 200px;
+        background-color: #222222;
+        display: inline-block;
+        transition: top .4s;
+        margin-top: 0;
+    }
+    ul.show{
+        top: 60px;
+    }
+    ul li{
+        top:0;
+        width: 100%;
+        float: left;
+        text-align: center;
+    }
+    #bar{
+        display: inline;
+    }
+}
+@media screen and (max-width: 800px){
+   
+    ul{
+        width: 100%;
+    }
+    .toggle{
+        top: 0;
+    }
+    .socialtop{
+        display: inline-block;
+    }
+    .socialtop a:hover{
+        color: white;
+    }
+    #bar{
+        display: inline;
+    }
+   
+
+}
+
+
+
+nav.sticky ul{
+    width: auto;
+}
+ul li a:focus-within{
+    color: cyan;
+}
+
+#YADESH{
+    display: none;
+}

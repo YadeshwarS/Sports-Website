@@ -1,0 +1,130 @@
+#slider{
+    overflow: hidden;
+    width: 100%;
+    
+    
+}
+#slider figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+}
+#slider figure img{
+    float: left;
+    width: 20%;
+    height: 500px;
+}
+
+@keyframes slider {
+    0%{
+        left: 0;
+    }
+    20%{
+        left: 0;
+    }
+    25%{
+        left: -100%;
+    }
+    45%{
+        left: -100%;
+    }
+    50%{
+        left: -200%;
+    }
+    70%{
+        left: -200%;
+    }
+    75%{
+        left: -300%;
+    }
+    95%{
+        left: -300%;
+    }
+    100%{
+        left: -400%;
+    }
+}
+.body{
+    padding-right: 5px;
+}
+table{
+  color: white;
+  width: 250px;
+  text-align: center;
+  float: right;
+  margin-right: 50px;
+  margin-bottom: -30px;
+  background-color: black;
+}
+tr,td,th{
+    border: 2px solid white;
+}
+.list-group{
+    float: right;
+    width: 100%;
+    margin-top: 50px;
+    cursor:context-menu;
+    text-align: center;
+}
+.list-group a:hover{
+    background-color: gray;
+    transition: 0.5s;
+}
+@media screen and (max-width: 768px){
+    #slider{
+        overflow: hidden;
+        width: 100%;
+        float: right;
+        padding-top: 0;
+        padding-right: 0;
+        
+    }
+    #slider figure{
+        position: relative;
+        width: 500%;
+        margin: 0;
+        left: 0;
+        animation: 20s slider infinite;
+    }
+    #slider figure img{
+        float: left;
+        width: 20%;
+        height: 500px;
+    }
+    
+    @keyframes slider {
+        0%{
+            left: 0;
+        }
+        20%{
+            left: 0;
+        }
+        25%{
+            left: -100%;
+        }
+        45%{
+            left: -100%;
+        }
+        50%{
+            left: -200%;
+        }
+        70%{
+            left: -200%;
+        }
+        75%{
+            left: -300%;
+        }
+        95%{
+            left: -300%;
+        }
+        100%{
+            left: -400%;
+        }
+    }
+}
+#im{
+    height: 50px;
+    margin: 20px;
+}

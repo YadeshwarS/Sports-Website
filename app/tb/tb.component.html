@@ -1,0 +1,45 @@
+<h4>Enter the details asked below to Store your details</h4>
+<form action="">
+        <label class="form-label"><b>Player Name:</b></label>
+        <input type="text" class="form-control" name="playername" placeholder="Enter Player Name" [(ngModel)]="playername" >
+        <label class="form-label"><b>School Name:</b></label>
+        <input type="text" class="form-control" placeholder="Enter School Name" name="schoolname" [(ngModel)]="schoolname">
+         <label for=""><b>SportsName:</b></label>
+         <input type="text" class="form-control" placeholder="Enter sports Name" [(ngModel)]="sportname" name="sportname">
+         
+        <label class="form-label"><b>Date of Match Played:</b></label>
+        <input type="date" class="form-control" name="date" [(ngModel)]="date">
+        <div id="btn">
+            <button type="submit" class="btn btn-info" value="submit"(click)="addStudent()"> <a> Submit</a></button>
+            <button type="reset" class="btn btn-danger" id="reset" value="reset">Reset</button>
+        </div>
+        </form>
+        <div class="row" id="details">
+            <div class="col-md-8 mt-5">
+                <h5 class="text-danger">Details: </h5>
+                <div class="card p-3">
+                    <div class="card-body">
+                        <table class="table table-hover">
+                            <thead>
+                              <tr>
+                                <th scope="col">PlayerName</th>
+                                <th scope="col">SchoolName</th>
+                                <th scope="col">SportsName</th>
+                                <th scope="col">Date</th>
+                                <th>Action</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr *ngFor="let student of studentsList">
+                                <th>{{student.playername}}</th>
+                                <td>{{student.schoolname}}</td>
+                                <td>{{student.sportsname}}</td>
+                                <td>{{student.date}}</td>
+                                <td><button class="btn btn-outline-danger" style="padding:2px 5px ;" (click)=" deleteStudent(student)">Delete</button></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </div>
+                </div>
+            </div>
+        </div>

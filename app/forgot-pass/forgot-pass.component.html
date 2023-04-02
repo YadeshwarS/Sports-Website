@@ -1,0 +1,42 @@
+<div class="container-fluid" id="form">
+    <div class="row mt-5">
+        <div class="col">
+           <div class="col-4">
+            <div class="card shadow">
+                <div class="card-body" id="body">
+                    <form id="form">
+                        <div class="mb-3">
+                            <h4 class="text-dark text-muted">Forgot Password</h4>
+                        </div>
+                        <hr>
+                        <div class="mb-3">
+                            <label for="exampleInputName" class="form-label">UserName</label>
+                            <input type="text" class="form-control" name="username">
+                        </div>
+                        <div class="mb-3">
+                          <label for="number" class="form-label">MobileNo</label>
+                          <input type="number" class="form-control" name="number" 
+                          oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                          maxlength = "10">
+                        </div>
+                        <div class="mb-3" id="email">
+                          <label for="exampleInputEmail1" class="form-label">Email address</label>
+                          <input type="email" class="form-control" name="email" [(ngModel)]="email">
+                          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        
+                       
+                        <button type="button" class="btn btn-info" (click)="forgotpass()">send link</button>
+                      <div class="col-6">
+                        <a style="text-decoration: none;" href="login" >back to login</a>
+                      </div>  
+                     
+
+                    </form>
+                </div>
+            </div>
+           </div>
+        </div>
+        <div class="col"></div>
+    </div>
+</div>

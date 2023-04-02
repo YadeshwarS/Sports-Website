@@ -1,0 +1,26 @@
+nav ul{
+    text-transform: uppercase;
+}
+nav ul li{
+    text-decoration: none;
+    list-style: none;
+    font-size: 20px;
+    text-align: center;
+cursor: pointer;
+padding-top: 10px;
+
+
+}
+nav ul li:hover{
+    color: blue;
+}
+div{
+    background-image: url('/assets/bg1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+li:hover {
+    transform: scale(1.1);}
+nav ul li:focus-within{
+    color: red;
+}
